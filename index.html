@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdoptaTuÁrbol</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-banner">
+            <span class="subtitle">Tu plataforma favorita de adopción de árboles</span>
+        </div>
+        <div class="header-content container">
+            <h1>Adopta<span class="highlight">TuÁrbol</span></h1>
+            <div class="buttons">
+                <button id="adoptar-btn">Adoptar</button>
+                <button id="donar-btn">Donar</button>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <hr class="header-line">
+        <div class="filter-section">
+            <span class="filter-label">Mostrando: </span>
+            <select id="tree-filter" class="filter-dropdown">
+              <option value="all">Todos los Árboles</option>
+              <option value="fruit">Árboles Frutales</option>
+              <option value="flowering">Árboles de Flores</option>
+              <option value="ornamental">Árboles Ornamentales</option>
+            </select>
+          </div>               
+        <div class="tree-cards">
+          <div class="tree-card">
+            <img src="images/alamo.jpg" alt="Álamo" class="tree-image">
+            <div class="tree-info">
+              <h3 class="tree-title">Álamo</h3>
+              <p>Árbol caducifolio, de hojas anchas y con largos pecíolos.</p>
+              <button class="adopt-btn" onclick="toggleAdopt(this)">Adoptar</button>
+            </div>
+          </div>
+          <div class="tree-card">
+            <img src="images/fresno.jpg" alt="Fresno" class="tree-image">
+            <div class="tree-info">
+              <h3 class="tree-title">Fresno</h3>
+              <p>Árbol con tronco recto y cilíndrico, con amplia copa.</p>
+              <button class="adopt-btn" onclick="toggleAdopt(this)">Adoptar</button>
+            </div>
+          </div>
+          <div class="tree-card">
+            <img src="images/pino.jpg" alt="Pino" class="tree-image">
+            <div class="tree-info">
+              <h3 class="tree-title">Pino</h3>
+              <p>Árbol de la familia de las abietáceas, de tronco elevado, recto.</p>
+              <button class="adopt-btn" onclick="toggleAdopt(this)">Adoptar</button>
+            </div>
+          </div>
+          <div class="tree-card">
+            <img src="images/jacaranda.jpg" alt="Jacaranda" class="tree-image">
+            <div class="tree-info">
+              <h3 class="tree-title">Jacaranda</h3>
+              <p>Árbol de copa extendida y redondeada con flores moradas.</p>
+              <button class="adopt-btn" onclick="toggleAdopt(this)">Adoptar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <footer>
+        <div class="footer-container">
+          <div class="contact-info">
+            <h3>Contáctanos</h3>
+            <p>Av. Principal #123<br>Ciudad Palma, 10000<br>Chile</p>
+          </div>
+          <div class="links-container">
+            <div class="links-column">
+              <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Adopta un Árbol</a></li>
+              </ul>
+            </div>
+            <div class="links-column">
+              <ul>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Patrocinadores</a></li>
+                <li><a href="#">Proyectos</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="subscribe-container">
+            <h3>Suscríbete</h3>
+            <form>
+              <input type="email" placeholder="usuario@correo.com">
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </footer>      
+    <script src="js/script.js"></script>
+</body>
+</html>
